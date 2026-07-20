@@ -1,0 +1,51 @@
+/* DreamRest Design System - CSS Variables */
+:root {
+  /* Primary */
+  --navy: #1B2A4A;
+  --indigo: #3D5A80;
+  /* Secondary */
+  --beige: #F5F0EB;
+  --soft-white: #FAFAF8;
+  --warm-gray: #9A9A9A;
+  /* Accent */
+  --gold: #C9A96E;
+  --sage: #7D9B76;
+  /* CTA */
+  --cta-bg: #1B2A4A;
+  --cta-text: #FFFFFF;
+  --cta-hover: #C9A96E;
+  /* Status */
+  --success: #6BBF7A;
+  --error: #E07070;
+  --warning: #E8A838;
+  /* Typography */
+  --font-heading: 'DM Serif Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --h1: 56px; --h2: 42px; --h3: 30px; --h4: 22px;
+  --body: 18px; --small: 16px;
+  /* Spacing */
+  --section-pad: 100px 0;
+  --container: 1200px;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 4px 30px rgba(27,42,74,0.08);
+  --shadow-hover: 0 12px 40px rgba(27,42,74,0.15);
+  --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  /* Navbar */
+  --nav-h: 70px;
+  --nav-h-mobile: 60px;
+}
+
+[data-theme="dark"] {
+  --navy: #E8E4DF;
+  --indigo: #98B6D6;
+  --beige: #1A1A2E;
+  --soft-white: #0F0F1A;
+  --warm-gray: #888;
+  --gold: #D4B87A;
+  --sage: #8DAF86;
+  --cta-bg: #C9A96E;
+  --cta-text: #0F0F1A;
+  --shadow: 0 4px 30px rgba(0,0,0,0.3);
+  --shadow-hover: 0 12px 40px rgba(0,0,0,0.5);
+}

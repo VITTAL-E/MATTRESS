@@ -1,0 +1,277 @@
+/* CSS specifically for Home 2 */
+
+.hero-v2 {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 5%;
+}
+
+.hero-v2-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1542889601-399c4f3a8402?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.hero-v2-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 42, 74, 0.4);
+}
+
+.hero-v2-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  color: #fff;
+}
+
+.hero-v2-content h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.hero-v2-content p {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  margin-bottom: 40px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.hero-v2-content .btn {
+  font-size: 1.1rem;
+  padding: 16px 40px;
+  border-radius: 50px;
+  background: var(--gold);
+  color: #fff;
+  border: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-v2-content .btn:hover {
+  background: #fff;
+  color: var(--navy);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Featured Collections */
+.collections-v2 {
+  padding: var(--section-pad);
+  background: var(--soft-white);
+}
+
+.collections-v2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.collection-card {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  cursor: pointer;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.collection-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.8));
+  pointer-events: none;
+}
+
+.collection-card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  z-index: 2;
+  color: #fff;
+  transform: translateY(20px);
+  transition: var(--transition);
+}
+
+.collection-card-info h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.collection-card-info p {
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.collection-card:hover img {
+  transform: scale(1.05);
+}
+
+.collection-card:hover .collection-card-info {
+  transform: translateY(0);
+}
+
+/* Sleep Science Section */
+.sleep-science {
+  padding: 120px 0;
+  background: var(--beige);
+  overflow: hidden;
+}
+
+.science-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.science-images {
+  flex: 1;
+  position: relative;
+  min-height: 600px;
+}
+
+.science-img-main {
+  width: 80%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.science-img-float {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  width: 50%;
+  border-radius: var(--radius);
+  border: 10px solid var(--beige);
+  box-shadow: var(--shadow-hover);
+}
+
+.science-content {
+  flex: 1;
+}
+
+.science-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.science-list li {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.science-list-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.science-list h4 {
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin-bottom: 5px;
+}
+
+.science-list p {
+  color: var(--warm-gray);
+  line-height: 1.6;
+}
+
+/* Interactive Image Gallery */
+.gallery-section {
+  padding: var(--section-pad);
+  background: var(--soft-white);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.gallery-item {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+.gallery-item:nth-child(2) { grid-column: span 1; grid-row: span 1; }
+.gallery-item:nth-child(3) { grid-column: span 1; grid-row: span 1; }
+.gallery-item:nth-child(4) { grid-column: span 2; grid-row: span 1; }
+
+@media (max-width: 900px) {
+  .science-container {
+    flex-direction: column;
+  }
+  .science-images {
+    min-height: 400px;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-auto-rows: 250px;
+  }
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(4) {
+    grid-column: span 2;
+  }
+}
