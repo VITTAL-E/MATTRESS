@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="description" content="DreamRest - Premium handcrafted mattresses for luxurious comfort.">
-<title>DreamRest - Premium Mattress and Bedding Store</title>
+<title>Contact Us - DreamRest</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect rx='8' width='36' height='36' fill='%231B2A4A'/%3E%3Cpath d='M8 22c2-6 5-10 10-10s8 4 10 10' stroke='%23C9A96E' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/variables.css">
 <link rel="stylesheet" href="css/base.css">
@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="css/sections.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/home2.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -24,11 +23,11 @@
 </a>
 <div class="nav-menu">
 <ul class="nav-links">
-<li class="nav-dropdown"><a href="#" class="active" aria-haspopup="true" aria-expanded="false">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
+<li class="nav-dropdown"><a href="#" aria-haspopup="true" aria-expanded="false">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
 <ul class="dropdown-menu"><li><a href="index.html">Home 1</a></li><li><a href="home2.html">Home 2</a></li></ul></li>
 <li><a href="about.html">About</a></li>
 <li><a href="services.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
 </ul>
 <div class="mobile-toggles">
 <button class="nav-toggle-btn" id="mobileDirToggle" aria-label="Toggle text direction"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h14"/></svg><span>LTR</span></button>
@@ -45,16 +44,43 @@
 </div>
 </nav>
 
-<!-- Hero Section V2 -->
-<section class="hero-v2" id="home" aria-label="Hero">
-<div class="hero-v2-bg"></div>
-<div class="hero-v2-content reveal">
-<h1>Awaken Your Senses. <br> Elevate Your Sleep.</h1>
-<p>Immerse yourself in a world of tranquility. Our exclusive sleep collections are crafted with precision, science, and the finest natural materials to redefine your nights and mornings.</p>
-<a href="#categories" class="btn">Explore Collections <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<!-- Section 6: Store Visit Booking - Split Layout -->
+<section class="booking" id="booking" aria-label="Book a Store Visit" style="padding-top: calc(var(--nav-h) + 60px); min-height: 80vh;">
+<div class="container">
+<div class="section-header reveal"><span class="label">Visit Us</span><h2>Book a Store Visit</h2><p>Experience our mattresses in person with a personalized consultation from our sleep experts.</p></div>
+<div class="booking-wrapper reveal-scale">
+<div class="booking-info">
+<h2>Visit Our Showroom</h2>
+<p>Step into our luxurious showroom and test every mattress. Our sleep consultants will guide you to the perfect match based on your preferences.</p>
+<div class="booking-perks">
+<div class="booking-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>One-on-one sleep consultation</div>
+<div class="booking-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Try all mattress models</div>
+<div class="booking-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Exclusive in-store pricing</div>
+<div class="booking-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Complimentary beverage</div>
+</div>
+</div>
+<div class="booking-form-side">
+<form class="booking-form" id="bookingForm" novalidate>
+<div class="form-row">
+<div class="form-group"><label for="name">Full Name</label><input type="text" id="name" placeholder="John Smith" required></div>
+<div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="john@example.com" required></div>
+</div>
+<div class="form-row">
+<div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" placeholder="+1 (555) 000-0000" required></div>
+<div class="form-group"><label for="date">Preferred Date</label><input type="date" id="date" required></div>
+</div>
+<div class="form-row">
+<div class="form-group"><label for="time">Preferred Time</label><select id="time" required><option value="">Select a time</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option></select></div>
+<div class="form-group"><label for="store">Store Location</label><select id="store" required><option value="">Select a store</option><option>New York - Manhattan</option><option>Los Angeles - Beverly Hills</option><option>Chicago - Gold Coast</option><option>Miami - Design District</option></select></div>
+</div>
+<div class="form-group"><label for="message">Message (Optional)</label><textarea id="message" rows="3" placeholder="Tell us about your sleep preferences..."></textarea></div>
+<button type="submit" class="btn btn-primary">Book My Visit</button>
+</form>
+<div class="form-success" id="formSuccess"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><h3>Booking Confirmed!</h3><p>We have received your booking. Check your email for confirmation details.</p></div>
+</div>
+</div>
 </div>
 </section>
-
 
 <!-- Footer -->
 <footer class="footer" role="contentinfo">
@@ -131,10 +157,6 @@ document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').fo
 
 // Booking Form
 document.getElementById('bookingForm').addEventListener('submit',function(e){e.preventDefault();let valid=true;this.querySelectorAll('[required]').forEach(f=>{if(!f.value.trim()){f.style.borderColor='var(--error)';valid=false}else{f.style.borderColor='rgba(27,42,74,0.12)'}});if(valid){this.style.display='none';document.getElementById('formSuccess').classList.add('show')}});
-
-// Active nav link highlight
-const sections=document.querySelectorAll('section[id]');
-window.addEventListener('scroll',()=>{const sy=window.scrollY+100;sections.forEach(s=>{const st=s.offsetTop-100;const sh=s.offsetHeight;const sid=s.getAttribute('id');if(sy>st&&sy<st+sh){document.querySelectorAll('.nav-links a').forEach(a=>{a.classList.remove('active');if(a.getAttribute('href')==='#'+sid)a.classList.add('active')})}})});
 </script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="description" content="DreamRest - Premium handcrafted mattresses for luxurious comfort.">
-<title>DreamRest - Premium Mattress and Bedding Store</title>
+<title>Services - DreamRest</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect rx='8' width='36' height='36' fill='%231B2A4A'/%3E%3Cpath d='M8 22c2-6 5-10 10-10s8 4 10 10' stroke='%23C9A96E' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/variables.css">
 <link rel="stylesheet" href="css/base.css">
@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="css/sections.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/home2.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -24,10 +23,10 @@
 </a>
 <div class="nav-menu">
 <ul class="nav-links">
-<li class="nav-dropdown"><a href="#" class="active" aria-haspopup="true" aria-expanded="false">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
+<li class="nav-dropdown"><a href="#" aria-haspopup="true" aria-expanded="false">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
 <ul class="dropdown-menu"><li><a href="index.html">Home 1</a></li><li><a href="home2.html">Home 2</a></li></ul></li>
 <li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
+<li><a href="services.html" class="active">Services</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 <div class="mobile-toggles">
@@ -45,16 +44,57 @@
 </div>
 </nav>
 
-<!-- Hero Section V2 -->
-<section class="hero-v2" id="home" aria-label="Hero">
-<div class="hero-v2-bg"></div>
-<div class="hero-v2-content reveal">
-<h1>Awaken Your Senses. <br> Elevate Your Sleep.</h1>
-<p>Immerse yourself in a world of tranquility. Our exclusive sleep collections are crafted with precision, science, and the finest natural materials to redefine your nights and mornings.</p>
-<a href="#categories" class="btn">Explore Collections <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle;"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<!-- Section 2: Mattress Categories - Bento Grid -->
+<section class="categories" id="categories" aria-label="Mattress Categories" style="padding-top: calc(var(--nav-h) + 60px);">
+<div class="container">
+<div class="section-header reveal"><span class="label">Our Collection</span><h2>Mattress Categories</h2><p>Explore our range of premium mattresses crafted for every sleep preference and comfort level.</p></div>
+<div class="bento-grid stagger-children">
+<div class="bento-item large reveal">
+<img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" alt="Memory Foam Mattress" class="bento-img" loading="lazy">
+<div class="bento-overlay"><h3>Memory Foam</h3><p>Body-contouring comfort for pressure relief</p><span class="price">From $899</span><a href="#" class="btn">Shop Now</a></div>
+</div>
+<div class="bento-item reveal">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80" alt="Latex Mattress" class="bento-img" loading="lazy">
+<div class="bento-overlay"><h3>Latex</h3><p>Natural breathability &amp; support</p><span class="price">From $1,199</span></div>
+</div>
+<div class="bento-item reveal">
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="Hybrid Mattress" class="bento-img" loading="lazy">
+<div class="bento-overlay"><h3>Hybrid</h3><p>Springs meet foam technology</p><span class="price">From $999</span></div>
+</div>
+<div class="bento-item wide reveal">
+<img src="https://images.unsplash.com/photo-1616627561950-9f746e330187?w=800&q=80" alt="Orthopedic Mattress" class="bento-img" loading="lazy">
+<div class="bento-overlay"><h3>Orthopedic</h3><p>Medically-designed spinal support for deep restorative sleep</p><span class="price">From $1,099</span><a href="#" class="btn">Explore</a></div>
+</div>
+<div class="bento-item reveal">
+<img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80" alt="King Size" class="bento-img" loading="lazy">
+<div class="bento-overlay"><h3>King Size</h3><p>Ultimate luxury space</p><span class="price">From $1,499</span></div>
+</div>
+<div class="bento-item reveal">
+<img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&q=80" alt="Luxury Plush" class="bento-img" loading="lazy">
+<div class="bento-overlay"><h3>Luxury Plush</h3><p>Cloud-like softness</p><span class="price">From $1,299</span></div>
+</div>
+</div>
 </div>
 </section>
 
+<!-- Section 4: Bedding Accessories - Zig-Zag Editorial -->
+<section class="accessories" id="accessories" aria-label="Bedding Accessories">
+<div class="container">
+<div class="section-header reveal"><span class="label">Complete Your Bedroom</span><h2>Bedding Accessories</h2><p>Curated accessories to complement your mattress and elevate your sleep sanctuary.</p></div>
+<div class="editorial-row reveal-left">
+<div class="editorial-img"><img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=700&q=80" alt="Premium Pillows" loading="lazy"></div>
+<div class="editorial-text"><span class="label">Pillows</span><h3>Premium Memory Foam Pillows</h3><p>Ergonomically designed pillows that cradle your head and neck for perfect spinal alignment. Available in soft, medium, and firm support levels.</p><div class="editorial-price">From $89</div><a href="#" class="btn btn-primary">Shop Pillows</a></div>
+</div>
+<div class="editorial-row reveal-right">
+<div class="editorial-img"><img src="https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?w=700&q=80" alt="Luxury Comforters" loading="lazy"></div>
+<div class="editorial-text"><span class="label">Comforters</span><h3>All-Season Luxury Comforters</h3><p>Temperature-regulating comforters with premium down alternative fill. Breathable, hypoallergenic, and irresistibly soft for year-round comfort.</p><div class="editorial-price">From $199</div><a href="#" class="btn btn-primary">Shop Comforters</a></div>
+</div>
+<div class="editorial-row reveal-left">
+<div class="editorial-img"><img src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658?w=700&q=80" alt="Mattress Protectors" loading="lazy"></div>
+<div class="editorial-text"><span class="label">Protectors</span><h3>Waterproof Mattress Protectors</h3><p>Ultra-thin, breathable protectors that shield your mattress without compromising comfort. Machine washable and whisper-quiet.</p><div class="editorial-price">From $69</div><a href="#" class="btn btn-primary">Shop Protectors</a></div>
+</div>
+</div>
+</section>
 
 <!-- Footer -->
 <footer class="footer" role="contentinfo">
@@ -128,13 +168,6 @@ document.querySelectorAll('.nav-links a:not(.nav-dropdown > a)').forEach(a=>{a.a
 // Scroll Reveal
 const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
 document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>observer.observe(el));
-
-// Booking Form
-document.getElementById('bookingForm').addEventListener('submit',function(e){e.preventDefault();let valid=true;this.querySelectorAll('[required]').forEach(f=>{if(!f.value.trim()){f.style.borderColor='var(--error)';valid=false}else{f.style.borderColor='rgba(27,42,74,0.12)'}});if(valid){this.style.display='none';document.getElementById('formSuccess').classList.add('show')}});
-
-// Active nav link highlight
-const sections=document.querySelectorAll('section[id]');
-window.addEventListener('scroll',()=>{const sy=window.scrollY+100;sections.forEach(s=>{const st=s.offsetTop-100;const sh=s.offsetHeight;const sid=s.getAttribute('id');if(sy>st&&sy<st+sh){document.querySelectorAll('.nav-links a').forEach(a=>{a.classList.remove('active');if(a.getAttribute('href')==='#'+sid)a.classList.add('active')})}})});
 </script>
 </body>
 </html>
