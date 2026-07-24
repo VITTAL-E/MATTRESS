@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="DreamRest - Premium handcrafted mattresses for luxurious comfort.">
+<meta name="description" content="Learn about DreamRest - our story, mission, team, and commitment to premium sleep.">
 <title>About Us - DreamRest</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect rx='8' width='36' height='36' fill='%231B2A4A'/%3E%3Cpath d='M8 22c2-6 5-10 10-10s8 4 10 10' stroke='%23C9A96E' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/variables.css">
@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="css/sections.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/page-sections.css">
+<link rel="stylesheet" href="css/page-sections2.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -27,6 +29,8 @@
 <ul class="dropdown-menu"><li><a href="index.html">Home 1</a></li><li><a href="home2.html">Home 2</a></li></ul></li>
 <li><a href="about.html" class="active">About</a></li>
 <li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="blog.html">Blog</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 <div class="mobile-toggles">
@@ -44,55 +48,82 @@
 </div>
 </nav>
 
-<!-- Section 3: Why Choose Us - Offset Cards -->
-<section class="why-us" id="about" aria-label="Why Choose Us" style="padding-top: calc(var(--nav-h) + 60px);">
+<!-- Section 13: About Hero Banner -->
+<section class="about-hero" id="about-hero" aria-label="About Us" style="background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600&q=80') center/cover no-repeat; position: relative;">
+<div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(27,42,74,0.85);z-index:1;"></div>
+<div class="container reveal" style="position:relative;z-index:2;">
+<span class="label" style="color:var(--gold)">Our Story</span>
+<h1 style="color:#fff">Crafting Dreams Since 2010</h1>
+<p style="color:rgba(255,255,255,0.9)">From a small workshop to a nationwide brand, DreamRest has been on a mission to revolutionize how people sleep — one handcrafted mattress at a time.</p>
+</div>
+</section>
+
+<!-- Section 14: Our Mission - Split Diagonal -->
+<section class="split-diag" id="mission" aria-label="Our Mission">
 <div class="container">
-<div class="section-header reveal"><span class="label">Why DreamRest</span><h2>Why Choose Us</h2><p>We combine premium materials with expert craftsmanship to deliver the perfect night's sleep.</p></div>
-<div class="why-grid stagger-children">
-<div class="why-card reveal"><span class="why-number">01</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><h4>100-Night Trial</h4><p>Sleep on it for 100 nights. If you are not completely in love, we will pick it up and refund every penny.</p></div>
-<div class="why-card reveal"><span class="why-number">02</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><h4>Free Delivery</h4><p>Complimentary white-glove delivery and setup. We handle everything so you can focus on resting.</p></div>
-<div class="why-card reveal"><span class="why-number">03</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Premium Materials</h4><p>CertiPUR-US certified foams, organic cotton covers, and sustainably sourced natural latex.</p></div>
-<div class="why-card reveal"><span class="why-number">04</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div><h4>15-Year Warranty</h4><p>Industry-leading warranty coverage because we stand behind every mattress we craft.</p></div>
-<div class="why-card reveal"><span class="why-number">05</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><h4>Expert Consultation</h4><p>Our sleep specialists help you find the perfect mattress for your body type and sleep style.</p></div>
+<div class="split-diag-wrap">
+<div class="split-diag-img reveal-left"><img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=600&q=80" alt="Mattress Crafting Workshop" loading="lazy"></div>
+<div class="split-diag-text reveal-right">
+<div class="section-header" style="text-align:left"><span class="label">Our Mission</span><h2>Better Sleep for Everyone</h2></div>
+<p>We believe everyone deserves a great night's sleep. Our mission is to combine cutting-edge sleep science with artisanal craftsmanship to create mattresses that don't just support your body — they transform your wellbeing.</p>
+<p>Every material is ethically sourced, every stitch is placed with intention, and every mattress is tested for 200+ hours before it reaches your home.</p>
+</div>
 </div>
 </div>
 </section>
 
-<!-- Section 5: Testimonials - Masonry Grid -->
-<section class="testimonials" id="testimonials" aria-label="Customer Testimonials">
+<!-- Section 15: Team Members - Profile Grid -->
+<section class="team-section" id="team" aria-label="Our Team">
 <div class="container">
-<div class="section-header reveal"><span class="label">Customer Stories</span><h2>What Our Sleepers Say</h2><p>Real experiences from customers who transformed their sleep with DreamRest.</p></div>
-<div class="testimonial-grid stagger-children">
-<div class="testimonial-card reveal">
-<div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
-<blockquote>Best mattress I have ever owned. The memory foam contours perfectly to my body. My back pain is completely gone after just two weeks of sleeping on it.</blockquote>
-<div class="testimonial-author"><div class="testimonial-avatar">SM</div><div><div class="name">Sarah Mitchell</div><div class="role">Memory Foam - Queen</div></div></div>
+<div class="section-header reveal"><span class="label">Meet the Team</span><h2>The People Behind DreamRest</h2><p>Passionate sleep experts dedicated to your comfort.</p></div>
+<div class="team-grid stagger-children">
+<div class="team-card reveal"><div class="team-avatar"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&q=80" alt="Jonathan Reed" loading="lazy"></div><h4>Jonathan Reed</h4><span class="team-role">Founder & CEO</span></div>
+<div class="team-card reveal"><div class="team-avatar"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80" alt="Priya Sharma" loading="lazy"></div><h4>Priya Sharma</h4><span class="team-role">Head of Design</span></div>
+<div class="team-card reveal"><div class="team-avatar"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80" alt="Marcus Chen" loading="lazy"></div><h4>Marcus Chen</h4><span class="team-role">Sleep Scientist</span></div>
+<div class="team-card reveal"><div class="team-avatar"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80" alt="Sarah Okafor" loading="lazy"></div><h4>Sarah Okafor</h4><span class="team-role">Customer Experience</span></div>
 </div>
-<div class="testimonial-card reveal">
-<div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
-<blockquote>The delivery was seamless and the setup team was incredibly professional. This hybrid mattress gives me the perfect balance of support and softness. Worth every penny!</blockquote>
-<div class="testimonial-author"><div class="testimonial-avatar">JR</div><div><div class="name">James Rodriguez</div><div class="role">Hybrid - King</div></div></div>
 </div>
-<div class="testimonial-card reveal">
-<div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
-<blockquote>As someone with chronic back issues, the orthopedic mattress has been life-changing.</blockquote>
-<div class="testimonial-author"><div class="testimonial-avatar">EP</div><div><div class="name">Emily Parker</div><div class="role">Orthopedic - Queen</div></div></div>
+</section>
+
+<!-- Section 16: Company Timeline - Horizontal -->
+<section class="h-timeline" id="timeline" aria-label="Our Journey">
+<div class="container">
+<div class="section-header reveal"><span class="label">Our Journey</span><h2>Milestones</h2><p>Key moments in DreamRest's history.</p></div>
+<div class="h-tl-track stagger-children">
+<div class="h-tl-item reveal"><div class="h-tl-dot"></div><div class="h-tl-year">2010</div><h4>Founded</h4><p>Started in a small Brooklyn workshop</p></div>
+<div class="h-tl-item reveal"><div class="h-tl-dot"></div><div class="h-tl-year">2013</div><h4>First Store</h4><p>Opened Manhattan flagship showroom</p></div>
+<div class="h-tl-item reveal"><div class="h-tl-dot"></div><div class="h-tl-year">2016</div><h4>10K Customers</h4><p>Reached 10,000 happy sleepers</p></div>
+<div class="h-tl-item reveal"><div class="h-tl-dot"></div><div class="h-tl-year">2019</div><h4>Nationwide</h4><p>Expanded to 8 showrooms across the US</p></div>
+<div class="h-tl-item reveal"><div class="h-tl-dot"></div><div class="h-tl-year">2022</div><h4>Eco Certified</h4><p>100% sustainable materials commitment</p></div>
+<div class="h-tl-item reveal"><div class="h-tl-dot"></div><div class="h-tl-year">2026</div><h4>50K+ Sleepers</h4><p>Serving over 50,000 customers nationwide</p></div>
 </div>
-<div class="testimonial-card reveal">
-<div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
-<blockquote>We bought the latex king for our master bedroom. The natural materials and breathability make such a difference in hot summers. We also got the pillows and comforter set. Everything feels cohesive and luxurious.</blockquote>
-<div class="testimonial-author"><div class="testimonial-avatar">DK</div><div><div class="name">David Kim</div><div class="role">Latex - King</div></div></div>
 </div>
-<div class="testimonial-card reveal">
-<div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
-<blockquote>The 100-night trial sold me. But honestly, I knew within the first night this was the one. Amazing quality at a fair price.</blockquote>
-<div class="testimonial-author"><div class="testimonial-avatar">LW</div><div><div class="name">Lisa Wang</div><div class="role">Memory Foam - Double</div></div></div>
+</section>
+
+<!-- Section 17: Core Values - Value Grid -->
+<section class="values-section" id="values" aria-label="Core Values">
+<div class="container">
+<div class="section-header reveal"><span class="label">What Drives Us</span><h2>Our Core Values</h2><p>The principles that guide every decision at DreamRest.</p></div>
+<div class="values-grid stagger-children">
+<div class="val-card reveal"><div class="val-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><h4>Passion for Quality</h4><p>We never compromise on materials or craftsmanship.</p></div>
+<div class="val-card reveal"><div class="val-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div><h4>Sustainability</h4><p>Eco-friendly practices from sourcing to delivery.</p></div>
+<div class="val-card reveal"><div class="val-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div><h4>Customer First</h4><p>Your comfort and satisfaction drive everything we do.</p></div>
+<div class="val-card reveal"><div class="val-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h4>Innovation</h4><p>Constantly pushing boundaries in sleep technology.</p></div>
+<div class="val-card reveal"><div class="val-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Integrity</h4><p>Transparent pricing with no hidden fees or gimmicks.</p></div>
+<div class="val-card reveal"><div class="val-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div><h4>Community</h4><p>Giving back through sleep education and donations.</p></div>
 </div>
-<div class="testimonial-card reveal">
-<div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></div>
-<blockquote>Outstanding customer service and the sleep consultation helped us pick the perfect firmness. Highly recommended for anyone serious about their sleep health.</blockquote>
-<div class="testimonial-author"><div class="testimonial-avatar">MA</div><div><div class="name">Michael Adams</div><div class="role">Hybrid - Queen</div></div></div>
 </div>
+</section>
+
+<!-- Section 18: Sustainability -->
+<section class="sustain-section" id="sustainability" aria-label="Sustainability">
+<div class="container">
+<div class="section-header reveal"><span class="label">Our Commitment</span><h2>Sustainability at DreamRest</h2><p>Building a greener future, one mattress at a time.</p></div>
+<div class="sustain-grid stagger-children">
+<div class="sustain-card reveal"><img src="https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?w=500&q=80" alt="Sustainable Materials" loading="lazy"><div class="sustain-card-body"><h4>Organic Materials</h4><p>100% organic cotton covers and natural latex sourced from sustainable plantations.</p><div class="sustain-stat">100% Organic</div></div></div>
+<div class="sustain-card reveal"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80" alt="Carbon Neutral" loading="lazy"><div class="sustain-card-body"><h4>Carbon Neutral</h4><p>We offset every gram of carbon from production to doorstep delivery.</p><div class="sustain-stat">Net Zero</div></div></div>
+<div class="sustain-card reveal"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&q=80" alt="Recycling Program" loading="lazy"><div class="sustain-card-body"><h4>Mattress Recycling</h4><p>Free old mattress pickup and 95% material recycling rate.</p><div class="sustain-stat">95% Recycled</div></div></div>
+<div class="sustain-card reveal"><img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=500&q=80" alt="Forest Planting" loading="lazy"><div class="sustain-card-body"><h4>Tree Planting</h4><p>One tree planted for every mattress sold — over 50,000 and counting.</p><div class="sustain-stat">50K+ Trees</div></div></div>
 </div>
 </div>
 </section>
@@ -103,39 +134,15 @@
 <div class="footer-grid">
 <div class="footer-brand">
 <a href="index.html" class="nav-logo"><svg viewBox="0 0 36 36" fill="none"><rect rx="8" width="36" height="36" fill="#1B2A4A"/><path d="M8 22c2-6 5-10 10-10s8 4 10 10" stroke="#C9A96E" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="14" r="2" fill="#C9A96E"/></svg><span>DreamRest</span></a>
-<p>Crafting premium sleep experiences since 2010. We combine innovative materials with timeless design to create mattresses that transform the way you sleep.</p>
+<p>Crafting premium sleep experiences since 2010.</p>
 <div class="social-icons">
 <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-<a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
-<a href="#" class="social-icon" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.15 9.42 7.6 11.18-.1-.94-.2-2.38.04-3.41.22-.93 1.4-5.93 1.4-5.93s-.36-.71-.36-1.77c0-1.66.96-2.9 2.16-2.9 1.02 0 1.51.77 1.51 1.68 0 1.03-.65 2.56-.99 3.98-.28 1.19.6 2.16 1.77 2.16 2.13 0 3.77-2.25 3.77-5.49 0-2.87-2.06-4.88-5.01-4.88-3.41 0-5.42 2.56-5.42 5.21 0 1.03.4 2.14.9 2.74.1.12.11.22.08.34-.09.38-.3 1.19-.34 1.36-.05.22-.18.27-.41.16-1.54-.72-2.5-2.97-2.5-4.78 0-3.89 2.83-7.46 8.15-7.46 4.28 0 7.6 3.05 7.6 7.12 0 4.25-2.68 7.67-6.4 7.67-1.25 0-2.43-.65-2.83-1.42l-.77 2.94c-.28 1.08-1.04 2.43-1.55 3.25C9.58 23.81 10.76 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg></a>
-<a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-<a href="#" class="social-icon" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/></svg></a>
+<a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></a>
 </div>
 </div>
-<div>
-<h4>Quick Links</h4>
-<div class="footer-links"><a href="#">Home</a><a href="#">Services</a><a href="#">About</a><a href="#">Contact</a><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
-</div>
-<div>
-<h4>Products</h4>
-<div class="footer-links"><a href="#">Mattresses</a><a href="#">Pillows</a><a href="#">Bedding</a><a href="#">Accessories</a><a href="#">Bed Frames</a><a href="#">Comforters</a></div>
-</div>
-<div>
-<h4>Resources</h4>
-<div class="footer-links"><a href="#">FAQs</a><a href="#">Warranty</a><a href="#">Delivery</a><a href="#">Sleep Guide</a><a href="#">Blog</a><a href="#">Reviews</a></div>
-</div>
-<div>
-<h4>Contact Us</h4>
-<div class="footer-contact">
-<div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+18005553456">+1 (800) 555-3456</a></div>
-<div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg><a href="mailto:hello@dreamrest.com">hello@dreamrest.com</a></div>
-<div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>123 Sleep Avenue, Suite 100<br>New York, NY 10001</span></div>
-<div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon-Sat: 10AM - 8PM<br>Sun: 11AM - 6PM</span></div>
-</div>
-<h4 style="margin-top:20px">Newsletter</h4>
-<p style="font-size:14px;color:rgba(255,255,255,0.55);margin-bottom:12px;line-height:1.7">Get sleep tips and exclusive offers delivered to your inbox.</p>
-<form class="newsletter-form" aria-label="Newsletter signup"><input type="email" placeholder="Enter your email" aria-label="Email for newsletter" required><button type="submit">Subscribe</button></form>
-</div>
+<div><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
+<div><h4>Products</h4><div class="footer-links"><a href="#">Mattresses</a><a href="#">Pillows</a><a href="#">Bedding</a><a href="#">Accessories</a></div></div>
+<div><h4>Contact Us</h4><div class="footer-contact"><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+18005553456">+1 (800) 555-3456</a></div><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg><a href="mailto:hello@dreamrest.com">hello@dreamrest.com</a></div></div></div>
 </div>
 <div class="footer-bottom">
 <p>&copy; 2026 DreamRest. All rights reserved.</p>
@@ -144,29 +151,18 @@
 </div>
 </footer>
 <script>
-// Theme Toggle
 function toggleTheme(){const h=document.documentElement;const t=h.getAttribute('data-theme')==='dark'?'light':'dark';h.setAttribute('data-theme',t);localStorage.setItem('theme',t)}
 document.getElementById('themeToggle').addEventListener('click',toggleTheme);
 document.getElementById('mobileThemeToggle').addEventListener('click',toggleTheme);
 const savedTheme=localStorage.getItem('theme');if(savedTheme)document.documentElement.setAttribute('data-theme',savedTheme);
-
-// RTL/LTR Toggle
 function toggleDir(){const h=document.documentElement;const d=h.getAttribute('dir')==='rtl'?'ltr':'rtl';h.setAttribute('dir',d);document.querySelectorAll('#dirToggle span, #mobileDirToggle span').forEach(s=>s.textContent=d.toUpperCase());localStorage.setItem('dir',d)}
 document.getElementById('dirToggle').addEventListener('click',toggleDir);
 document.getElementById('mobileDirToggle').addEventListener('click',toggleDir);
 const savedDir=localStorage.getItem('dir');if(savedDir){document.documentElement.setAttribute('dir',savedDir);document.querySelectorAll('#dirToggle span, #mobileDirToggle span').forEach(s=>s.textContent=savedDir.toUpperCase())}
-
-// Hamburger
 const hamburger=document.getElementById('hamburger');const navMenu=document.querySelector('.nav-menu');
 hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');navMenu.classList.toggle('active');hamburger.setAttribute('aria-expanded',navMenu.classList.contains('active'))});
-
-// Mobile dropdown
 document.querySelectorAll('.nav-dropdown > a').forEach(a=>{a.addEventListener('click',e=>{if(window.innerWidth<=900){e.preventDefault();a.parentElement.classList.toggle('open')}})});
-
-// Close mobile menu on link click
 document.querySelectorAll('.nav-links a:not(.nav-dropdown > a)').forEach(a=>{a.addEventListener('click',()=>{if(window.innerWidth<=900){hamburger.classList.remove('active');navMenu.classList.remove('active')}})});
-
-// Scroll Reveal
 const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
 document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>observer.observe(el));
 </script>

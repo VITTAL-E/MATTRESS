@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="DreamRest - Premium handcrafted mattresses for luxurious comfort.">
+<meta name="description" content="Contact DreamRest - book a store visit, find locations, and get in touch.">
 <title>Contact Us - DreamRest</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect rx='8' width='36' height='36' fill='%231B2A4A'/%3E%3Cpath d='M8 22c2-6 5-10 10-10s8 4 10 10' stroke='%23C9A96E' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/variables.css">
@@ -12,27 +12,23 @@
 <link rel="stylesheet" href="css/sections.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/page-sections.css">
+<link rel="stylesheet" href="css/page-sections2.css">
 </head>
 <body>
-<!-- Navbar -->
 <nav class="navbar" role="navigation" aria-label="Main navigation">
 <div class="container">
-<a href="index.html" class="nav-logo" aria-label="DreamRest Home">
-<svg viewBox="0 0 36 36" fill="none"><rect rx="8" width="36" height="36" fill="currentColor" style="color:var(--navy)"/><path d="M8 22c2-6 5-10 10-10s8 4 10 10" stroke="#C9A96E" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="14" r="2" fill="#C9A96E"/></svg>
-<span>DreamRest</span>
-</a>
+<a href="index.html" class="nav-logo" aria-label="DreamRest Home"><svg viewBox="0 0 36 36" fill="none"><rect rx="8" width="36" height="36" fill="currentColor" style="color:var(--navy)"/><path d="M8 22c2-6 5-10 10-10s8 4 10 10" stroke="#C9A96E" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="14" r="2" fill="#C9A96E"/></svg><span>DreamRest</span></a>
 <div class="nav-menu">
 <ul class="nav-links">
-<li class="nav-dropdown"><a href="#" aria-haspopup="true" aria-expanded="false">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a>
-<ul class="dropdown-menu"><li><a href="index.html">Home 1</a></li><li><a href="home2.html">Home 2</a></li></ul></li>
+<li class="nav-dropdown"><a href="#" aria-haspopup="true" aria-expanded="false">Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></a><ul class="dropdown-menu"><li><a href="index.html">Home 1</a></li><li><a href="home2.html">Home 2</a></li></ul></li>
 <li><a href="about.html">About</a></li>
 <li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="blog.html">Blog</a></li>
 <li><a href="contact.html" class="active">Contact</a></li>
 </ul>
-<div class="mobile-toggles">
-<button class="nav-toggle-btn" id="mobileDirToggle" aria-label="Toggle text direction"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h14"/></svg><span>LTR</span></button>
-<button class="nav-toggle-btn" id="mobileThemeToggle" aria-label="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></button>
-</div>
+<div class="mobile-toggles"><button class="nav-toggle-btn" id="mobileDirToggle" aria-label="Toggle text direction"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h14"/></svg><span>LTR</span></button><button class="nav-toggle-btn" id="mobileThemeToggle" aria-label="Toggle theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></button></div>
 <a href="contact.html" class="mobile-cta">Book a Visit</a>
 </div>
 <div class="nav-right">
@@ -44,40 +40,122 @@
 </div>
 </nav>
 
-<!-- Section 6: Store Visit Booking - Split Layout -->
-<section class="booking" id="booking" aria-label="Book a Store Visit" style="padding-top: calc(var(--nav-h) + 60px); min-height: 80vh;">
+<!-- Section: Contact Hero -->
+<section class="about-hero" id="contact-hero" aria-label="Contact Us" style="background: url('https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=1600&q=80') center/cover no-repeat; position: relative;">
+<div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(27,42,74,0.85);z-index:1;"></div>
+<div class="container reveal" style="position:relative;z-index:2;">
+<span class="label" style="color:var(--gold)">Get in Touch</span>
+<h1 style="color:#fff">We're Here to Help</h1>
+<p style="color:rgba(255,255,255,0.9)">Have questions about our mattresses, delivery, or warranty? Our sleep experts are ready to assist you.</p>
+</div>
+</section>
+
+<!-- Section 25: Contact Method Cards -->
+<section class="contact-cards-section" id="contact-methods" aria-label="Get in Touch">
 <div class="container">
-<div class="section-header reveal"><span class="label">Visit Us</span><h2>Book a Store Visit</h2><p>Experience our mattresses in person with a personalized consultation from our sleep experts.</p></div>
+<div class="section-header reveal"><span class="label">Reach Out</span><h2>Get In Touch</h2><p>Choose how you'd like to connect with us.</p></div>
+<div class="contact-cards-grid stagger-children">
+<div class="cc-card reveal"><div class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0122 16.92z"/></svg></div><h4>Call Us</h4><p>Speak directly with our sleep experts.</p><a href="tel:+18005553456">+1 (800) 555-3456</a></div>
+<div class="cc-card reveal"><div class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></div><h4>Email Us</h4><p>We respond within 24 hours.</p><a href="mailto:hello@dreamrest.com">hello@dreamrest.com</a></div>
+<div class="cc-card reveal"><div class="cc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h4>Live Chat</h4><p>Instant answers to your questions.</p><a href="#">Start Chat Now</a></div>
+</div>
+</div>
+</section>
+
+<!-- Section 26: Booking Form - Glass Card -->
+<section class="booking" id="booking" aria-label="Book a Store Visit">
+<div class="container">
+<div class="section-header reveal"><span class="label">Visit Us</span><h2>Book a Store Visit</h2><p>Experience our mattresses in person with a personalized consultation.</p></div>
 <div class="booking-wrapper reveal-scale">
 <div class="booking-info">
 <h2>Visit Our Showroom</h2>
-<p>Step into our luxurious showroom and test every mattress. Our sleep consultants will guide you to the perfect match based on your preferences.</p>
+<p>Step into our luxurious showroom and test every mattress. Our consultants will guide you to the perfect match.</p>
 <div class="booking-perks">
-<div class="booking-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>One-on-one sleep consultation</div>
+<div class="booking-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>One-on-one consultation</div>
 <div class="booking-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Try all mattress models</div>
 <div class="booking-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Exclusive in-store pricing</div>
-<div class="booking-perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Complimentary beverage</div>
 </div>
 </div>
 <div class="booking-form-side">
 <form class="booking-form" id="bookingForm" novalidate>
-<div class="form-row">
-<div class="form-group"><label for="name">Full Name</label><input type="text" id="name" placeholder="John Smith" required></div>
-<div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="john@example.com" required></div>
-</div>
-<div class="form-row">
-<div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" placeholder="+1 (555) 000-0000" required></div>
-<div class="form-group"><label for="date">Preferred Date</label><input type="date" id="date" required></div>
-</div>
-<div class="form-row">
-<div class="form-group"><label for="time">Preferred Time</label><select id="time" required><option value="">Select a time</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option></select></div>
-<div class="form-group"><label for="store">Store Location</label><select id="store" required><option value="">Select a store</option><option>New York - Manhattan</option><option>Los Angeles - Beverly Hills</option><option>Chicago - Gold Coast</option><option>Miami - Design District</option></select></div>
-</div>
+<div class="form-row"><div class="form-group"><label for="name">Full Name</label><input type="text" id="name" placeholder="John Smith" required></div><div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="john@example.com" required></div></div>
+<div class="form-row"><div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" placeholder="+1 (555) 000-0000" required></div><div class="form-group"><label for="date">Date</label><input type="date" id="date" required></div></div>
+<div class="form-row"><div class="form-group"><label for="time">Time</label><select id="time" required><option value="">Select time</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option></select></div><div class="form-group"><label for="store">Store</label><select id="store" required><option value="">Select store</option><option>New York - Manhattan</option><option>Los Angeles - Beverly Hills</option><option>Chicago - Gold Coast</option></select></div></div>
 <div class="form-group"><label for="message">Message (Optional)</label><textarea id="message" rows="3" placeholder="Tell us about your sleep preferences..."></textarea></div>
 <button type="submit" class="btn btn-primary">Book My Visit</button>
 </form>
-<div class="form-success" id="formSuccess"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><h3>Booking Confirmed!</h3><p>We have received your booking. Check your email for confirmation details.</p></div>
+<div class="form-success" id="formSuccess"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><h3>Booking Confirmed!</h3><p>Check your email for confirmation details.</p></div>
 </div>
+</div>
+</div>
+</section>
+
+<!-- Section 27: Store Locations - Location Cards -->
+<section class="locations-section" id="locations" aria-label="Store Locations">
+<div class="container">
+<div class="section-header reveal"><span class="label">Find Us</span><h2>Our Showrooms</h2><p>Visit any of our luxury showrooms nationwide.</p></div>
+<div class="locations-grid stagger-children">
+<div class="loc-card reveal"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80" alt="Manhattan Store" loading="lazy"><div class="loc-card-body"><h4>New York - Manhattan</h4><p>123 Sleep Avenue, Suite 100, NY 10001</p><span class="loc-hours">Mon-Sat: 10AM-8PM</span></div></div>
+<div class="loc-card reveal"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&q=80" alt="Beverly Hills Store" loading="lazy"><div class="loc-card-body"><h4>Los Angeles - Beverly Hills</h4><p>456 Wilshire Blvd, Beverly Hills, CA 90210</p><span class="loc-hours">Mon-Sat: 10AM-9PM</span></div></div>
+<div class="loc-card reveal"><img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=400&q=80" alt="Chicago Store" loading="lazy"><div class="loc-card-body"><h4>Chicago - Gold Coast</h4><p>789 Michigan Ave, Chicago, IL 60611</p><span class="loc-hours">Mon-Sat: 10AM-7PM</span></div></div>
+<div class="loc-card reveal"><img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=400&q=80" alt="Miami Store" loading="lazy"><div class="loc-card-body"><h4>Miami - Design District</h4><p>321 NE 40th St, Miami, FL 33137</p><span class="loc-hours">Mon-Sat: 10AM-8PM</span></div></div>
+</div>
+</div>
+</section>
+
+<!-- Section 28: FAQ - Two Column -->
+<section class="faq2-section" id="faq" aria-label="Frequently Asked Questions">
+<div class="container">
+<div class="section-header reveal"><span class="label">Help Center</span><h2>Frequently Asked Questions</h2><p>Quick answers to common questions about DreamRest.</p></div>
+<div class="faq2-grid reveal">
+<div class="faq2-col">
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you offer free shipping?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">Yes! We offer free white-glove delivery and setup on all mattress orders within the continental US.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What sizes are available?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">We offer Twin, Twin XL, Full, Queen, King, and California King. Custom sizes are also available.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">How long does delivery take?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">Standard delivery takes 3-5 business days. Express delivery (1-2 days) is available for an additional fee.</div></div>
+</div>
+<div class="faq2-col">
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can I try before I buy?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">Absolutely! Visit any of our showrooms to try every mattress. Plus, our 100-night trial lets you test at home.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you remove old mattresses?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">Yes, our delivery team will remove and recycle your old mattress at no extra cost.</div></div>
+<div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What payment methods do you accept?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div><div class="faq-a">We accept all major credit cards, PayPal, Apple Pay, and offer 0% APR financing through Affirm.</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Section 29: Working Hours - Schedule Grid -->
+<section class="schedule-section" id="hours" aria-label="Working Hours">
+<div class="container">
+<div class="section-header reveal"><span class="label">Visit Hours</span><h2>When We're Open</h2><p>Plan your showroom visit during our operating hours.</p></div>
+<div class="reveal">
+<table class="schedule-table">
+<thead><tr><th>Day</th><th>Hours</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Monday</td><td>10:00 AM – 8:00 PM</td><td><span class="open">Open</span></td></tr>
+<tr><td>Tuesday</td><td>10:00 AM – 8:00 PM</td><td><span class="open">Open</span></td></tr>
+<tr><td>Wednesday</td><td>10:00 AM – 8:00 PM</td><td><span class="open">Open</span></td></tr>
+<tr><td>Thursday</td><td>10:00 AM – 8:00 PM</td><td><span class="open">Open</span></td></tr>
+<tr><td>Friday</td><td>10:00 AM – 9:00 PM</td><td><span class="open">Open</span></td></tr>
+<tr><td>Saturday</td><td>10:00 AM – 9:00 PM</td><td><span class="open">Open</span></td></tr>
+<tr><td>Sunday</td><td>11:00 AM – 6:00 PM</td><td><span class="open">Open</span></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- Section 30: Social Media Mosaic -->
+<section class="social-section" id="social" aria-label="Follow Us">
+<div class="container">
+<div class="section-header reveal"><span class="label">@DreamRest</span><h2>Follow Our Journey</h2><p>Behind-the-scenes moments and customer bedroom transformations.</p></div>
+<div class="social-grid stagger-children">
+<div class="social-item reveal"><img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=400&q=80" alt="Social Post 1" loading="lazy"></div>
+<div class="social-item reveal"><img src="https://images.unsplash.com/photo-1588046130717-0eb0c9a3ba15?w=400&q=80" alt="Social Post 2" loading="lazy"></div>
+<div class="social-item reveal"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&q=80" alt="Social Post 3" loading="lazy"></div>
+<div class="social-item reveal"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&q=80" alt="Social Post 4" loading="lazy"></div>
+<div class="social-item reveal"><img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=400&q=80" alt="Social Post 5" loading="lazy"></div>
+<div class="social-item reveal"><img src="https://images.unsplash.com/photo-1583845112239-97ef1341b271?w=400&q=80" alt="Social Post 6" loading="lazy"></div>
+<div class="social-item reveal"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=80" alt="Social Post 7" loading="lazy"></div>
+<div class="social-item reveal"><img src="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?w=400&q=80" alt="Social Post 8" loading="lazy"></div>
 </div>
 </div>
 </section>
@@ -86,76 +164,27 @@
 <footer class="footer" role="contentinfo">
 <div class="container">
 <div class="footer-grid">
-<div class="footer-brand">
-<a href="index.html" class="nav-logo"><svg viewBox="0 0 36 36" fill="none"><rect rx="8" width="36" height="36" fill="#1B2A4A"/><path d="M8 22c2-6 5-10 10-10s8 4 10 10" stroke="#C9A96E" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="14" r="2" fill="#C9A96E"/></svg><span>DreamRest</span></a>
-<p>Crafting premium sleep experiences since 2010. We combine innovative materials with timeless design to create mattresses that transform the way you sleep.</p>
-<div class="social-icons">
-<a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-<a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
-<a href="#" class="social-icon" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.15 9.42 7.6 11.18-.1-.94-.2-2.38.04-3.41.22-.93 1.4-5.93 1.4-5.93s-.36-.71-.36-1.77c0-1.66.96-2.9 2.16-2.9 1.02 0 1.51.77 1.51 1.68 0 1.03-.65 2.56-.99 3.98-.28 1.19.6 2.16 1.77 2.16 2.13 0 3.77-2.25 3.77-5.49 0-2.87-2.06-4.88-5.01-4.88-3.41 0-5.42 2.56-5.42 5.21 0 1.03.4 2.14.9 2.74.1.12.11.22.08.34-.09.38-.3 1.19-.34 1.36-.05.22-.18.27-.41.16-1.54-.72-2.5-2.97-2.5-4.78 0-3.89 2.83-7.46 8.15-7.46 4.28 0 7.6 3.05 7.6 7.12 0 4.25-2.68 7.67-6.4 7.67-1.25 0-2.43-.65-2.83-1.42l-.77 2.94c-.28 1.08-1.04 2.43-1.55 3.25C9.58 23.81 10.76 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg></a>
-<a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-<a href="#" class="social-icon" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/></svg></a>
+<div class="footer-brand"><a href="index.html" class="nav-logo"><svg viewBox="0 0 36 36" fill="none"><rect rx="8" width="36" height="36" fill="#1B2A4A"/><path d="M8 22c2-6 5-10 10-10s8 4 10 10" stroke="#C9A96E" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="18" cy="14" r="2" fill="#C9A96E"/></svg><span>DreamRest</span></a><p>Crafting premium sleep experiences since 2010.</p></div>
+<div><h4>Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
+<div><h4>Products</h4><div class="footer-links"><a href="#">Mattresses</a><a href="#">Pillows</a><a href="#">Bedding</a><a href="#">Accessories</a></div></div>
+<div><h4>Contact Us</h4><div class="footer-contact"><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+18005553456">+1 (800) 555-3456</a></div></div></div>
 </div>
-</div>
-<div>
-<h4>Quick Links</h4>
-<div class="footer-links"><a href="#">Home</a><a href="#">Services</a><a href="#">About</a><a href="#">Contact</a><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
-</div>
-<div>
-<h4>Products</h4>
-<div class="footer-links"><a href="#">Mattresses</a><a href="#">Pillows</a><a href="#">Bedding</a><a href="#">Accessories</a><a href="#">Bed Frames</a><a href="#">Comforters</a></div>
-</div>
-<div>
-<h4>Resources</h4>
-<div class="footer-links"><a href="#">FAQs</a><a href="#">Warranty</a><a href="#">Delivery</a><a href="#">Sleep Guide</a><a href="#">Blog</a><a href="#">Reviews</a></div>
-</div>
-<div>
-<h4>Contact Us</h4>
-<div class="footer-contact">
-<div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+18005553456">+1 (800) 555-3456</a></div>
-<div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg><a href="mailto:hello@dreamrest.com">hello@dreamrest.com</a></div>
-<div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>123 Sleep Avenue, Suite 100<br>New York, NY 10001</span></div>
-<div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon-Sat: 10AM - 8PM<br>Sun: 11AM - 6PM</span></div>
-</div>
-<h4 style="margin-top:20px">Newsletter</h4>
-<p style="font-size:14px;color:rgba(255,255,255,0.55);margin-bottom:12px;line-height:1.7">Get sleep tips and exclusive offers delivered to your inbox.</p>
-<form class="newsletter-form" aria-label="Newsletter signup"><input type="email" placeholder="Enter your email" aria-label="Email for newsletter" required><button type="submit">Subscribe</button></form>
-</div>
-</div>
-<div class="footer-bottom">
-<p>&copy; 2026 DreamRest. All rights reserved.</p>
-<div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div>
-</div>
+<div class="footer-bottom"><p>&copy; 2026 DreamRest. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
 </div>
 </footer>
 <script>
-// Theme Toggle
 function toggleTheme(){const h=document.documentElement;const t=h.getAttribute('data-theme')==='dark'?'light':'dark';h.setAttribute('data-theme',t);localStorage.setItem('theme',t)}
-document.getElementById('themeToggle').addEventListener('click',toggleTheme);
-document.getElementById('mobileThemeToggle').addEventListener('click',toggleTheme);
+document.getElementById('themeToggle').addEventListener('click',toggleTheme);document.getElementById('mobileThemeToggle').addEventListener('click',toggleTheme);
 const savedTheme=localStorage.getItem('theme');if(savedTheme)document.documentElement.setAttribute('data-theme',savedTheme);
-
-// RTL/LTR Toggle
 function toggleDir(){const h=document.documentElement;const d=h.getAttribute('dir')==='rtl'?'ltr':'rtl';h.setAttribute('dir',d);document.querySelectorAll('#dirToggle span, #mobileDirToggle span').forEach(s=>s.textContent=d.toUpperCase());localStorage.setItem('dir',d)}
-document.getElementById('dirToggle').addEventListener('click',toggleDir);
-document.getElementById('mobileDirToggle').addEventListener('click',toggleDir);
+document.getElementById('dirToggle').addEventListener('click',toggleDir);document.getElementById('mobileDirToggle').addEventListener('click',toggleDir);
 const savedDir=localStorage.getItem('dir');if(savedDir){document.documentElement.setAttribute('dir',savedDir);document.querySelectorAll('#dirToggle span, #mobileDirToggle span').forEach(s=>s.textContent=savedDir.toUpperCase())}
-
-// Hamburger
 const hamburger=document.getElementById('hamburger');const navMenu=document.querySelector('.nav-menu');
 hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');navMenu.classList.toggle('active');hamburger.setAttribute('aria-expanded',navMenu.classList.contains('active'))});
-
-// Mobile dropdown
 document.querySelectorAll('.nav-dropdown > a').forEach(a=>{a.addEventListener('click',e=>{if(window.innerWidth<=900){e.preventDefault();a.parentElement.classList.toggle('open')}})});
-
-// Close mobile menu on link click
 document.querySelectorAll('.nav-links a:not(.nav-dropdown > a)').forEach(a=>{a.addEventListener('click',()=>{if(window.innerWidth<=900){hamburger.classList.remove('active');navMenu.classList.remove('active')}})});
-
-// Scroll Reveal
 const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
 document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>observer.observe(el));
-
-// Booking Form
 document.getElementById('bookingForm').addEventListener('submit',function(e){e.preventDefault();let valid=true;this.querySelectorAll('[required]').forEach(f=>{if(!f.value.trim()){f.style.borderColor='var(--error)';valid=false}else{f.style.borderColor='rgba(27,42,74,0.12)'}});if(valid){this.style.display='none';document.getElementById('formSuccess').classList.add('show')}});
 </script>
 </body>

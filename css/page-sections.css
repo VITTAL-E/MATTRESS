@@ -1,0 +1,168 @@
+/* ===== PAGE SECTIONS - 42 Unique Layouts ===== */
+
+/* --- LAYOUT 1: Bento Grid (Featured Collections) --- */
+.feat-collections{padding:var(--section-pad);background:var(--soft-white)}
+.feat-bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:18px}
+.feat-bento .fb-item{position:relative;border-radius:var(--radius);overflow:hidden;cursor:pointer;transition:var(--transition)}
+.feat-bento .fb-item:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover)}
+.feat-bento .fb-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.feat-bento .fb-item:hover img{transform:scale(1.06)}
+.feat-bento .fb-item.fb-tall{grid-row:span 2}
+.feat-bento .fb-item.fb-wide{grid-column:span 2}
+.fb-cap{position:absolute;inset:0;background:linear-gradient(to top,rgba(27,42,74,.85) 0%,transparent 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:24px}
+.fb-cap h3{color:#fff;font-size:22px;margin-bottom:4px}
+.fb-cap span{color:var(--gold);font-weight:700;font-size:16px}
+
+/* --- LAYOUT 2: Icon Cards Row (Why Choose Us) --- */
+.icon-cards-section{padding:var(--section-pad);background:var(--beige)}
+.icon-cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.ic-card{background:var(--soft-white);border-radius:var(--radius);padding:40px 30px;text-align:center;transition:var(--transition);position:relative;overflow:hidden}
+.ic-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
+.ic-card .ic-num{position:absolute;top:12px;right:18px;font-family:var(--font-heading);font-size:52px;color:var(--beige);line-height:1}
+[data-theme="dark"] .ic-card .ic-num{color:rgba(255,255,255,.04)}
+.ic-card .ic-icon{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--indigo));display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+[data-theme="dark"] .ic-card .ic-icon{background:linear-gradient(135deg,var(--gold),#d4b87a)}
+.ic-card .ic-icon svg{width:28px;height:28px;color:#fff}
+[data-theme="dark"] .ic-card .ic-icon svg{color:#0F0F1A}
+.ic-card h4{margin-bottom:10px;color:var(--navy)}
+.ic-card p{color:var(--warm-gray);font-size:15px;line-height:1.7}
+
+/* --- LAYOUT 3: Product Carousel (Best Sellers) --- */
+.best-sellers{padding:var(--section-pad);background:var(--soft-white)}
+.bs-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:16px;scrollbar-width:thin}
+.bs-track::-webkit-scrollbar{height:6px}
+.bs-track::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+.bs-card{min-width:320px;flex-shrink:0;scroll-snap-align:start;border-radius:var(--radius);overflow:hidden;background:var(--beige);transition:var(--transition)}
+.bs-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.bs-card img{width:100%;height:240px;object-fit:cover}
+.bs-card-body{padding:24px}
+.bs-card-body h4{color:var(--navy);margin-bottom:6px}
+.bs-card-body .bs-price{color:var(--gold);font-family:var(--font-heading);font-size:22px;margin-bottom:6px}
+.bs-card-body p{color:var(--warm-gray);font-size:14px;line-height:1.6}
+.bs-card-body .bs-tag{display:inline-block;background:var(--gold);color:#1B2A4A;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px}
+
+/* --- LAYOUT 4: Vertical Timeline (Our Process) --- */
+.process-section{padding:var(--section-pad);background:var(--beige)}
+.timeline{position:relative;max-width:900px;margin:0 auto}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),var(--indigo));transform:translateX(-50%)}
+.tl-item{display:flex;align-items:center;gap:40px;margin-bottom:60px;position:relative}
+.tl-item:last-child{margin-bottom:0}
+.tl-item:nth-child(even){flex-direction:row-reverse}
+.tl-item .tl-img{flex:1;border-radius:var(--radius);overflow:hidden}
+.tl-item .tl-img img{width:100%;height:260px;object-fit:cover;border-radius:var(--radius);transition:transform .5s}
+.tl-item .tl-img:hover img{transform:scale(1.04)}
+.tl-item .tl-content{flex:1}
+.tl-dot{position:absolute;left:50%;transform:translateX(-50%);width:20px;height:20px;border-radius:50%;background:var(--gold);border:4px solid var(--beige);z-index:2}
+.tl-content .tl-step{font-size:12px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
+.tl-content h4{color:var(--navy);margin-bottom:10px}
+.tl-content p{color:var(--warm-gray);font-size:15px;line-height:1.7}
+
+/* --- LAYOUT 5: Masonry Testimonials --- */
+/* (reuses existing .testimonials styles from sections.css) */
+
+/* --- LAYOUT 6: Full-Width Split CTA --- */
+.split-cta{padding:var(--section-pad);background:var(--soft-white)}
+.split-cta-wrap{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-hover);min-height:420px}
+.split-cta-img{position:relative;overflow:hidden}
+.split-cta-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.split-cta-img:hover img{transform:scale(1.04)}
+.split-cta-content{background:linear-gradient(135deg,#1B2A4A,#3D5A80);padding:60px 48px;display:flex;flex-direction:column;justify-content:center}
+.split-cta-content h2{color:#fff;margin-bottom:16px}
+.split-cta-content p{color:rgba(255,255,255,.7);margin-bottom:28px;line-height:1.8}
+.split-cta-content .newsletter-form{display:flex;gap:12px}
+.split-cta-content .newsletter-form input{flex:1;padding:14px 18px;border:1.5px solid rgba(255,255,255,.2);border-radius:var(--radius-sm);background:rgba(255,255,255,.08);color:#fff;font-size:15px}
+.split-cta-content .newsletter-form input::placeholder{color:rgba(255,255,255,.4)}
+.split-cta-content .newsletter-form button{padding:14px 28px;background:var(--gold);color:#1B2A4A;border:none;border-radius:var(--radius-sm);font-weight:700;cursor:pointer;transition:var(--transition)}
+.split-cta-content .newsletter-form button:hover{background:#fff}
+
+/* --- LAYOUT 7: Overlapping Cards (Home2 Product Showcase) --- */
+.overlap-showcase{padding:var(--section-pad);background:var(--soft-white)}
+.overlap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.ov-card{position:relative;border-radius:var(--radius);overflow:visible;transition:var(--transition)}
+.ov-card:hover{transform:translateY(-8px)}
+.ov-card-img{border-radius:var(--radius);overflow:hidden;height:320px}
+.ov-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.ov-card:hover .ov-card-img img{transform:scale(1.05)}
+.ov-card-info{position:relative;margin:-40px 16px 0;background:var(--soft-white);border-radius:var(--radius-sm);padding:24px;box-shadow:var(--shadow);z-index:2}
+.ov-card-info h4{color:var(--navy);margin-bottom:6px}
+.ov-card-info .ov-price{color:var(--gold);font-family:var(--font-heading);font-size:20px}
+.ov-card-info p{color:var(--warm-gray);font-size:14px;margin-top:8px;line-height:1.6}
+
+/* --- LAYOUT 8: Stats Bar --- */
+.stats-bar{padding:80px 0;background:linear-gradient(135deg,#1B2A4A,#3D5A80)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.stat-item .stat-num{font-family:var(--font-heading);font-size:48px;color:var(--gold);display:block}
+.stat-item .stat-label{color:rgba(255,255,255,.7);font-size:15px;margin-top:6px}
+.stat-item .stat-icon{margin-bottom:12px}
+.stat-item .stat-icon svg{width:32px;height:32px;color:var(--gold)}
+
+/* --- LAYOUT 9: Tabbed Panels --- */
+.tabbed-section{padding:var(--section-pad);background:var(--beige)}
+.tab-nav{display:flex;gap:8px;justify-content:center;margin-bottom:40px;flex-wrap:wrap}
+.tab-btn{padding:12px 28px;border:2px solid rgba(27,42,74,.12);border-radius:50px;background:transparent;color:var(--navy);font-weight:600;font-size:14px;cursor:pointer;transition:var(--transition)}
+.tab-btn.active,.tab-btn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+[data-theme="dark"] .tab-btn.active,[data-theme="dark"] .tab-btn:hover{background:var(--gold);color:#0F0F1A;border-color:var(--gold)}
+.tab-panel{display:none;animation:fadeUp .4s ease}
+.tab-panel.active{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.tab-panel img{width:100%;height:380px;object-fit:cover;border-radius:var(--radius)}
+.tab-panel-text h3{color:var(--navy);margin-bottom:14px}
+.tab-panel-text p{color:var(--warm-gray);line-height:1.8;margin-bottom:20px}
+.tab-panel-text ul{list-style:none;padding:0}
+.tab-panel-text ul li{padding:8px 0;color:var(--navy);font-size:15px;display:flex;align-items:center;gap:10px}
+.tab-panel-text ul li svg{width:18px;height:18px;color:var(--gold);flex-shrink:0}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* --- LAYOUT 10: Feature Table --- */
+.compare-section{padding:var(--section-pad);background:var(--soft-white)}
+.compare-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.compare-table thead th{background:linear-gradient(135deg,#1B2A4A,#3D5A80);color:#fff;padding:20px 24px;font-size:15px;font-weight:600;text-align:center}
+.compare-table thead th:first-child{text-align:left}
+.compare-table tbody td{padding:16px 24px;border-bottom:1px solid rgba(27,42,74,.06);font-size:14px;color:var(--navy);text-align:center;background:var(--soft-white)}
+.compare-table tbody td:first-child{font-weight:600;text-align:left;color:var(--navy)}
+.compare-table tbody tr:hover td{background:var(--beige)}
+.compare-table .check{color:var(--gold);font-size:20px}
+.compare-table .featured-col{background:rgba(201,169,110,.08)!important}
+
+/* --- LAYOUT 11: Logo Wall --- */
+.press-section{padding:80px 0;background:var(--beige)}
+.press-logos{display:grid;grid-template-columns:repeat(5,1fr);gap:32px;align-items:center}
+.press-logo{display:flex;align-items:center;justify-content:center;padding:28px;background:var(--soft-white);border-radius:var(--radius-sm);transition:var(--transition);min-height:100px}
+.press-logo:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px)}
+.press-logo span{font-family:var(--font-heading);font-size:22px;color:var(--navy);opacity:.6;transition:var(--transition)}
+.press-logo:hover span{opacity:1;color:var(--gold)}
+
+/* --- LAYOUT 12: Map Split CTA --- */
+.map-cta{position:relative;padding:var(--section-pad);background:linear-gradient(135deg,#1B2A4A 0%,#2a3f5f 100%);overflow:hidden}
+.map-cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
+.map-cta-content h2{color:#fff;margin-bottom:16px}
+.map-cta-content p{color:rgba(255,255,255,.7);line-height:1.8;margin-bottom:28px}
+.map-cta-visual{border-radius:var(--radius);overflow:hidden;height:380px}
+.map-cta-visual img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
+
+/* --- RESPONSIVE for Layouts 1-12 --- */
+@media(max-width:1024px){
+.feat-bento{grid-template-columns:repeat(2,1fr)}
+.icon-cards-grid{grid-template-columns:repeat(2,1fr)}
+.overlap-grid{grid-template-columns:repeat(2,1fr)}
+.stats-grid{grid-template-columns:repeat(2,1fr);gap:24px}
+.tab-panel.active{grid-template-columns:1fr}
+.compare-table{font-size:13px}
+.press-logos{grid-template-columns:repeat(3,1fr)}
+.map-cta-grid{grid-template-columns:1fr}
+.split-cta-wrap{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+.feat-bento{grid-template-columns:1fr;grid-auto-rows:200px}
+.feat-bento .fb-item.fb-tall,.feat-bento .fb-item.fb-wide{grid-column:span 1;grid-row:span 1}
+.icon-cards-grid{grid-template-columns:1fr}
+.bs-card{min-width:280px}
+.timeline::before{left:20px}
+.tl-item,.tl-item:nth-child(even){flex-direction:column;align-items:flex-start;padding-left:50px}
+.tl-dot{left:20px}
+.overlap-grid{grid-template-columns:1fr}
+.stats-grid{grid-template-columns:1fr}
+.press-logos{grid-template-columns:repeat(2,1fr)}
+.map-cta-grid{grid-template-columns:1fr}
+.map-cta-visual{height:260px}
+.split-cta-content{padding:40px 28px}
+}
